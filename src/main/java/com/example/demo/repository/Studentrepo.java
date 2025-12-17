@@ -1,7 +1,10 @@
 package com.example.demo.repository;
 
-public interface Studentrepo{
-
+import org.springframework.
 @Repository
+public interface Studentrepo extends JpaRepository<Studententity,Integer>{
+    
+
+
 
 }
