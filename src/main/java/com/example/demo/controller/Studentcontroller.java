@@ -10,5 +10,7 @@ public class Studentcontroller{
      @Autowired Studentservice ser;    
      
      @PostMapping("/post")
-     public Student                             //dependency injection
+     public StudentEntity sendData(@RequestBody Studententity stu){//dependency injection
+        return ser.postData(stu);
+     }                            
 }
