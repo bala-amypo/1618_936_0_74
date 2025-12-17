@@ -7,5 +7,8 @@ import com.example.demo.service.Studentservice;
 
 @RestController
 public class Studentcontroller{
-     @Autowired Studentservice ser;                                 //dependency injection
+     @Autowired Studentservice ser;    
+     
+     @PostMapping("/post")
+     public Student                             //dependency injection
 }
