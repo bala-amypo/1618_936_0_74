@@ -35,10 +35,10 @@ public class Studententity{
     public void setPassword(String password){
         this.password=password;
     }
+    public Date getCreated(){
+        return created;
     }
-    }
-    }
-    }
+    public void setCreated(Date)
     }
 
 
