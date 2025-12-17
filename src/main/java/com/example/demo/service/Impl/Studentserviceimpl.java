@@ -18,6 +18,7 @@ public class Studentserviceimpl implements Studentservice{ //splited as 2 layers
        //deleteById()
        //existsById()       
        @Override
-        public Studententity postData(Studententity stu);
+        public Studententity postData(Studententity stu){
         return student.save(stu);
+}
 }
