@@ -14,7 +14,7 @@ public class Studententity{
     public void setId(int id){
         this.id=id;
     }
-    public int getId(){
+    public Integer getId(){
         return id;
     }
     public String getName(){
@@ -38,7 +38,16 @@ public class Studententity{
     public Date getCreated(){
         return created;
     }
-    public void setCreated(Date)
+    public void setCreated(Date created){
+        this.created=created;
+    }
+      
+    public Studententity(Integer id,String name,String email,String password,d)
+
+
+
+
+
     }
 
 
