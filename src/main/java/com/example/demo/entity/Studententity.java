@@ -1,7 +1,7 @@
 package com.example.demo.entity
 
 
-
+import java.util.Date;
 @Entity
 public class Studententity{
 
@@ -10,4 +10,6 @@ public class Studententity{
     private String email;
     private String password;
     private Date created;
+
+    
 }
