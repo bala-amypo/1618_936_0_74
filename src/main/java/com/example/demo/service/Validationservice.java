@@ -4,7 +4,7 @@ import java.util.List;
 import com.example.demo.entity.Validationentity;
 
 public interface  Validationservice{
-     Validationentity postData(Validationentity stu);
+     Validationentity postData(Validationentity val);
 
     
 }

@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +15,8 @@ public class Validationcontroller{
      @Autowired Validationservice ser;    
      
      @PostMapping("/post")
-     public Validationentity sendData(@Valid @RequestBody Validationentity stu){            //dependency injection
+     public Validationentity sendData(@Valid @RequestBody Validationentity stu
+     ){            //dependency injection
         return ser.postData(stu);
      }   
      }
