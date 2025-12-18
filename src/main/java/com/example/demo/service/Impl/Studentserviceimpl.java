@@ -27,5 +27,6 @@ public class Studentserviceimpl implements Studentservice{ //splited as 2 layers
        public List<Studententity>getAllData(){
          return student.findAll();
         }
-
+@Override
+      public String Delete(int id);
 }
