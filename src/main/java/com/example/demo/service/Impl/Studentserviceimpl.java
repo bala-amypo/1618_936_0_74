@@ -20,5 +20,12 @@ public class Studentserviceimpl implements Studentservice{ //splited as 2 layers
        @Override
         public Studententity postData(Studententity stu){
         return student.save(stu);
+
 }
+@Override
+
+       public List<Studententity>getAllData(){
+         return 
+        }
+
 }
