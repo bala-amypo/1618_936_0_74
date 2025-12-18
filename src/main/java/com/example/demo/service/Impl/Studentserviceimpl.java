@@ -2,7 +2,7 @@ package com.example.demo.service.Impl;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.stereotype.Service;
 import com.example.demo.repository.Studentrepo;
 import com.example.demo.entity.Studententity;
