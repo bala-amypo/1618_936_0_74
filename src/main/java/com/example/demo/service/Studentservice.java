@@ -8,6 +8,6 @@ public interface  Studentservice{
 
      List<Studententity>getAllData();
      String DeleteData(int id);
-      Studententity
+      Studententity getData(int id);
      
 }
