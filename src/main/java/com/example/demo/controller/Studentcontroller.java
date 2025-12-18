@@ -30,6 +30,6 @@ public class Studentcontroller{
      }
      @ GetMapping("/getid/{id}")
      public Studententity getdataid(@PathVariable int id){
-      return ser.getData(id);
+      return ser.getData(id).orElse(null);
      }
 }
