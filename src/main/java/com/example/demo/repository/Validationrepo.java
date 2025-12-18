@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.Validationentity;
 
 @Repository
-public interface Validationrepo extends JpaRepository<Validationentity,Integer>{
+public interface Validationrepo extends JpaRepository<Validationentity,Long>{ 
     
 
 
