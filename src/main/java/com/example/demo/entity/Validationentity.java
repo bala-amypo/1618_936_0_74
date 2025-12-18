@@ -57,7 +57,7 @@ public class Validationentity(){
      public void setAge(Integer age){
         this.age=age;
     }
-    public Long getId(){
+    public Integer getAge(){
         return age;
     }
     
@@ -71,7 +71,7 @@ public class Validationentity(){
     String email,
     @Size(min = 2, max = 30,message="must be 2 to 10 character")
     @NotNull(message = "Password is mandatory")
-    String password
+    String password,
     @Max(30)
     @Positive(message = "Age must be a positive number")
     Integer age){
