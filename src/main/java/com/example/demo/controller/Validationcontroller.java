@@ -10,19 +10,19 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.example.demo.entity.Studententity;
-import com.example.demo.service.Studentservice;
+import com.example.demo.entity.Validationentity;
+import com.example.demo.service.Validationservice;
 
 @RestController
 public class Validationcontroller{
-     @Autowired Studentservice ser;    
+     @Autowired Validationservice ser;    
      
      @PostMapping("/post")
-     public Studententity sendData(@RequestBody Studententity stu){            //dependency injection
+     public Validationentity sendData(@RequestBody Validationentity stu){            //dependency injection
         return ser.postData(stu);
      }   
      @GetMapping("/get")
-     public List<Studententity> getval(){
+     public List<Validationentity> getval(){
       return ser.getAllData();
      }        
      @DeleteMapping("/delete/{id}")
@@ -30,7 +30,7 @@ public class Validationcontroller{
       return ser.DeleteData(id);
      }
      @ GetMapping("/getid/{id}")
-     public Studententity getdataid(@PathVariable int id){
+     public Validationentity getdataid(@PathVariable int id){
       return ser.getData(id);
      }
      @PutMapping("/put/{id}")
