@@ -15,5 +15,9 @@ public class Studentcontroller{
      @PostMapping("/post")
      public Studententity sendData(@RequestBody Studententity stu){            //dependency injection
         return ser.postData(stu);
-     }                            
+     }   
+     @GetMapping("/get")
+     public List<Studententity> getval(){
+      return service.getAllData();
+     }                         
 }
