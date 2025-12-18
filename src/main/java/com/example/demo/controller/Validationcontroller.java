@@ -14,7 +14,7 @@ import com.example.demo.service.Validationservice;
 public class Validationcontroller{
      @Autowired Validationservice ser;    
      
-     @PostMapping("/post")
+     @PostMapping("/post1")
      public Validationentity sendData(@Valid @RequestBody Validationentity stu
      ){            //dependency injection
         return ser.postData(stu);

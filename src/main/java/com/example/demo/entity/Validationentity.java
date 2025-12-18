@@ -13,7 +13,7 @@ import jakarta.validation.constraints.Max;
 
 
 @Entity
-public class Validationentity(){
+public class Validationentity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
