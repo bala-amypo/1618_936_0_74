@@ -49,11 +49,14 @@ public class Validationentity(){
                this.email=email;
                this.password=password;
                this.age=age;
-
+    }
+    public Validationentity(){
+        
+    }
 }
 
 
-}
+
 
 
 
