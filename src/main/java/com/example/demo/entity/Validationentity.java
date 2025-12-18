@@ -54,11 +54,11 @@ public class Validationentity(){
     public void setPassword(String password){
         this.password=password;
     }
-     public void setAge(long id){
-        this.id=id;
+     public void setAge(Integer age){
+        this.age=age;
     }
     public Long getId(){
-        return id;
+        return age;
     }
     
 
