@@ -2,7 +2,7 @@ package com.example.demo.service.Impl;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.beans.factory.annotation.
 import org.springframework.stereotype.Service;
 import com.example.demo.repository.Studentrepo;
 import com.example.demo.entity.Studententity;
@@ -28,5 +28,8 @@ public class Studentserviceimpl implements Studentservice{ //splited as 2 layers
          return student.findAll();
         }
 @Override
-      public String Delete(int id);
+      public String DeleteData(@PathVariable int id){
+            student.deleteById(id);
+            return "Deleted Successfully";
+      }
 }
