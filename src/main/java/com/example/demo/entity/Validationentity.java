@@ -30,10 +30,10 @@ public class Validationentity(){
     @Positive(message = "Age must be a positive number")
     private Integer age;
      
-       public void setId(int id){
+       public void setId(long id){
         this.id=id;
     }
-    public Integer getId(){
+    public Long getId(){
         return id;
     }
     public String getName(){
@@ -54,7 +54,12 @@ public class Validationentity(){
     public void setPassword(String password){
         this.password=password;
     }
-   
+     public void setAge(long id){
+        this.id=id;
+    }
+    public Long getId(){
+        return id;
+    }
     
 
 
