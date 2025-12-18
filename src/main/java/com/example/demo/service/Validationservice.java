@@ -6,5 +6,5 @@ import com.example.demo.entity.Validationentity;
 public interface  Validationservice{
      Validationentity postData(Validationentity val);
 
-    
+    Validationentity getData(long id);
 }
