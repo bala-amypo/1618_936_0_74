@@ -12,7 +12,7 @@ import jakarta.persistence.Id;
 @Entity
 @Data
 @AllArgsConstructor
-@NotArgsConstructor
+@NoArgsConstructor
 
 public class Timestamp{
     @Id
