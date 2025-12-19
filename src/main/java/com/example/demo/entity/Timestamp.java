@@ -29,7 +29,10 @@ public class Timestamp{
         this.updateAt=now;
     
     }
-    @
+    @PreUpdate
+    public void Onupdate(){
+        this.updateAt=now;
+    }
 
 
 
