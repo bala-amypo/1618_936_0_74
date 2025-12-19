@@ -24,4 +24,5 @@ public class Idcarddetail{
     @JoinColumn(name = "student_id")
 
     private  Studentdetails student;
+    
 }
