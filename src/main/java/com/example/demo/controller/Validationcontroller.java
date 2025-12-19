@@ -18,5 +18,7 @@ public class Validationcontroller{
      public Validationentity sendData(@Valid @RequestBody Validationentity stu
      ){            //dependency injection
         return ser.postData(stu);
-     }   
+     }  
+     @GetMapping("/findV/{id}")
+     public Validationentity getDataval(@PathVariable long id) 
      }
