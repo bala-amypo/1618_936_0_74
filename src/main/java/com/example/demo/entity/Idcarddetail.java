@@ -3,8 +3,8 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GeneratedType;
+import jakarta.persistence.GeneratatedValue;
+import jakarta.persistence.GenerationType;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Timestamp{
+public class Idcarddetail{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
