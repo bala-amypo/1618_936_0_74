@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.repository.Timestamprepo;
 import com.example.demo.entity.Timestamp;
 import com.example.demo.service.Timestampservice;
-import com.example.demo.exception.Timestampexception;
+
 
 
 @Service
@@ -21,7 +21,7 @@ public class Timestampimpl implements Timestampservice{ //splited as 2 layers he
        //existsById()       
        @Override
         public Timestamp timeData(Timestamp timesof){
-        return ser.save(timesof);
+        return timerepo.save(timesof);
 
 }
 
