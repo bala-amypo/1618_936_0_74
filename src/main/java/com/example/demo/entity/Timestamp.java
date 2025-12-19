@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
+import jakarta.persistence.PrePersist;
 @Entity
 @Data
 @AllArgsConstructor
@@ -22,7 +22,11 @@ public class Timestamp{
     private String email;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
-    @Prepersist
+    @PrePersist
+    public void Oncreate(){
+        LocalDateTime now=new LocalData()
+
+
 
 
 }
