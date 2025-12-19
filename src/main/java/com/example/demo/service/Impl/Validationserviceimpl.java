@@ -23,5 +23,11 @@ public class Validationserviceimpl implements Validationservice{ //splited as 2 
 
 }
 
+      @Override
+        public Validationentity getData(long id){
+        return student.findById(id).orElse(null);
+
+}
+
 
 }
