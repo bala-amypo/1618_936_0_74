@@ -1,6 +1,8 @@
 package com.example.demo.entity;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Entity;
+import jakarta.persistence.
 public class Idcarddetail{
     private Integer id;
     private String card_no;
