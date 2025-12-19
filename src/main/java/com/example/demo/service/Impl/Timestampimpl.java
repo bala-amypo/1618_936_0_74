@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package com.example.demo.service.Impl;
 
-public class Timestampimpl{
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -20,8 +20,8 @@ public class Timestampserviceimpl implements Timestampservice{ //splited as 2 la
        //deleteById()
        //existsById()       
        @Override
-        public Timestampentity (Validationentity stu){
-        return timerepo.save(stu);
+        public Timestamp timeData(Timestamp timesof){
+        return timerepo.save(timesof);
 
 }
 
