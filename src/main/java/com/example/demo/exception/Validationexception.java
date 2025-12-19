@@ -8,7 +8,7 @@ public class Validationexception extends RuntimeException{
 
 
 
-    public validationexception(String message){
+    public Validationexception(String message){
         super(message);
 
     }
