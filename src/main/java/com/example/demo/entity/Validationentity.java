@@ -13,6 +13,7 @@ import jakarta.validation.constraints.Max;
 
 
 @Entity
+@Data
 public class Validationentity{
 
     @Id
