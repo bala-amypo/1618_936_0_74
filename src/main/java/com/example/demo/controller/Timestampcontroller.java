@@ -7,24 +7,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import jakarta.validation.Valid;
+import jakarta.Validation.Valid;
 
-import com.example.demo.entity.Validationentity;
-import com.example.demo.service.Validationservice;
+import com.example.demo.entity.Timestamp;
+import com.example.demo.service.Timestampservice;
 
 @RestController
-public class Validationcontroller{
-     @Autowired Validationservice ser;    
+public class Timestampcontroller{
+     @Autowired Timestampservice ser;    
      
-     @PostMapping("/post1")
-     public Validationentity sendData(@Valid @RequestBody Validationentity stu
+     @PostMapping("/postT")
+     public Timestamp tData(@Valid @RequestBody Timestamp timesof
      ){            //dependency injection
-        return ser.postData(stu);
+        return ser.TimeData(timesof);
      }  
-     @GetMapping("/findV/{id}")
-     public Validationentity getDataval(@PathVariable long id){
-      return ser.getData(id);
-     } 
-     }
+     
+     
     
 }
