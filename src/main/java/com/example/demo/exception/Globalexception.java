@@ -3,7 +3,7 @@ package com.example.demo.exception;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.H
+import org.springframework.web.bind.annotation.HttpBody;
 
 @RestControllerAdvice
 public class Globalexception{
