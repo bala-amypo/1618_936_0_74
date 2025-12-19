@@ -15,6 +15,8 @@ import jakarta.persistence.Id;
 @NotArgsConstructor
 
 public class Timestamp{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
