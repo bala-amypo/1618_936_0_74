@@ -7,5 +7,7 @@ public class Idcarddetail{
     private Integer 
 
     @OneToOne
-    private 
+    @JoinColumn(name = "student_id")
+
+    private  S
 }
