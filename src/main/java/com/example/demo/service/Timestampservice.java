@@ -5,5 +5,5 @@ import com.example.demo.entity.Timestamp;
 public class Timestampservice{
 
 
-    Timestamp timeData(Timestamp timeof);
+    Timestamp timeData(Timestamp timesof);
 }

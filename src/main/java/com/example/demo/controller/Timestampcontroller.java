@@ -17,9 +17,9 @@ public class Timestampcontroller{
      @Autowired Timestampservice ser;    
      
      @PostMapping("/postT")
-     public Timestamp tData(@Valid @RequestBody Timestamp timesof
-     ){            //dependency injection
-        return ser.TimeData(timesof);
+     public Timestamp tData(@Valid @RequestBody Timestamp timesof){
+                    //dependency injection
+        return ser.timeData(timesof);
      }  
      
      

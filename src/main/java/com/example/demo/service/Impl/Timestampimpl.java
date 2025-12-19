@@ -21,7 +21,7 @@ public class Timestampimpl implements Timestampservice{ //splited as 2 layers he
        //existsById()       
        @Override
         public Timestamp timeData(Timestamp timesof){
-        return timerepo.save(timesof);
+        return ser.save(timesof);
 
 }
 
