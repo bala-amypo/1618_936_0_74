@@ -29,61 +29,8 @@ public class Validationentity{
     @Max(30)
     @Positive(message = "Age must be a positive number")
     private Integer age;
-     
-       public void setId(long id){
-        this.id=id;
-    }
-    public Long getId(){
-        return id;
-    }
-    public String getName(){
-        return name;
-    }
-    public void setName(String name){
-        this.name=name;
-    }
-    public String getEmail(){
-        return email;
-    }
-    public void setEmail(String email){
-        this.email=email;
-    }
-    public String getPassword(){
-        return password;
-    }
-    public void setPassword(String password){
-        this.password=password;
-    }
-     public void setAge(Integer age){
-        this.age=age;
-    }
-    public Integer getAge(){
-        return age;
-    }
     
-
-
-    public Validationentity(Long id,
-    @NotNull
-    @Size(min = 2, max = 30,message="must be 2 to 10 character")
-    String name,
-    @Email(message = "Email is not valid")
-    String email,
-    @Size(min = 2, max = 30,message="must be 2 to 10 character")
-    @NotNull(message = "Password is mandatory")
-    String password,
-    @Max(30)
-    @Positive(message = "Age must be a positive number")
-    Integer age){
-               this.id=id;
-               this.name=name;
-               this.email=email;
-               this.password=password;
-               this.age=age;
-    }
-    public Validationentity(){
-
-    }
+       
 }
 
 
