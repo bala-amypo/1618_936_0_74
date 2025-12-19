@@ -12,7 +12,7 @@ import com.example.demo.service.Timestampservice;
 
 
 @Service
-public class Timestampimpl implements Timestampservice{ //splited as 2 layers here
+public class Timestampserviceimpl implements Timestampservice{ //splited as 2 layers here
  @Autowired Timestamprepo timerepo;    
        //save()-insert,update
        //findAll()
