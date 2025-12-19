@@ -1,9 +1,8 @@
 package com.example.demo.service;
 
-
 import com.example.demo.entity.Timestamp;
-public class Timestampservice{
 
+public interface Timestampservice {
 
-    Timestamp timeData(Timestamp timesof);
+    public Timestamp timeData(Timestamp timesof);
 }
